@@ -1,0 +1,66 @@
+.conversation {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header-center {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.con-heading {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+.con-buttons {
+  display: flex;
+  gap: 1rem; 
+}
+
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.close-button {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.more-button,
+.theme-button {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: #f0f0f0;;
+}
+
+.close-text {
+  font-size: 1rem;
+}
+
+
