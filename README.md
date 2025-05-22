@@ -7,8 +7,7 @@ A modern, **React.js-based Admin Panel UI** that simulates a human-AI customer s
 - A central chat window showing dynamic, customizable prompts
 - A dummy AI copilot on the right side that provides prompt suggestions
 
-### 🔗 [Live Demo](https://your-live-site-link.com)  
-> Replace with your actual deployed URL.
+### 🔗 [Live Demo](https://chat-com-chi.vercel.app/)  
 
 ---
 
@@ -29,7 +28,7 @@ A modern, **React.js-based Admin Panel UI** that simulates a human-AI customer s
 
 - **React.js** – Frontend framework
 - **JavaScript** – Logic and interactivity
-- **CSS** – Custom styling (or Tailwind CSS if used)
+- **CSS** – Custom styling
 
 ---
 
@@ -39,6 +38,26 @@ Follow these steps to run the project locally:
 
 ### 1. Clone the repository
 
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/khuswant18/ChatCom
+cd ChatCom
+
+### 2. Install dependencies
+npm install
+
+### 3. Start the development server
+npm start
+
+### 4. Open in your browser
+http://localhost:3000
+
+##Folder Structure
+/src
+  ├── components
+  │   ├── Sidebar.jsx
+  │   ├── ChatWindow.jsx
+  │   └── CopilotPanel.jsx
+  ├── App.js
+  └── index.js
+
+
+
