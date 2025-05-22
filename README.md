@@ -1,81 +1,43 @@
-# Chat App
+# 🧠 Chatbot Admin Panel UI
 
-A **real-time chat application** that enables users to send instant messages, create group chats, and stay connected with friends across devices. Built with modern technologies to deliver seamless communication.
+A modern, **React.js-based Admin Panel UI** that simulates a human-AI customer support interface. This panel includes:
 
----
+- A sidebar listing all users
+- A central chat window showing dynamic, customizable prompts
+- A dummy AI copilot on the right side that provides prompt suggestions
 
-## Table of Contents
-
-- [About](#about)  
-- [Features](#features)  
-- [Tech Stack](#tech-stack)  
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [API Endpoints](#api-endpoints)  
-- [Folder Structure](#folder-structure)  
-- [Screenshots](#screenshots)  
-- [Contributing](#contributing)  
-- [License](#license)  
-- [Contact](#contact)  
+### 🔗 [Live Demo](https://your-live-site-link.com)  
+> Replace with your actual deployed URL.
 
 ---
 
-## About
+## 🚀 Features
 
-The Chat App is designed to provide a smooth and intuitive chatting experience with features like:
+- **👤 User Sidebar**  
+  Displays a list of users on the left. Clicking a user simulates selecting them for a conversation.
 
-- Instant messaging  
-- Group chat support  
-- User authentication with secure login  
-- Online presence indicators  
-- Typing status  
-- Responsive UI for both desktop and mobile  
+- **💬 Chat Window (Middle Section)**  
+  Shows a customizable prompt-based conversation interface between the admin and the selected user.
 
----
-
-## Features
-
-- **Real-Time Messaging:** Messages are delivered instantly using WebSockets (Socket.IO).  
-- **User Authentication:** Secure signup and login system with password encryption and JWT tokens.  
-- **User Profiles:** Each user has a profile with an avatar, status, and display name.  
-- **Group Chats:** Users can create or join multiple chat rooms for group conversations.  
-- **Online Status:** Shows when users are online/offline.  
-- **Typing Indicators:** See when someone is typing a message.  
-- **Message History:** Persistent chat history stored in the database.  
-- **Responsive Design:** Works smoothly on desktop and mobile devices.
+- **🤖 Copilot Panel (Right Section)**  
+  Contains a dummy AI assistant offering clickable prompts. Clicking one sends it to the middle chat area.
 
 ---
 
-## Tech Stack
+## 🧱 Tech Stack
 
-| Layer         | Technology                 |
-|---------------|----------------------------|
-| Frontend      | React.js, Tailwind CSS     |
-| Backend       | Node.js, Express.js        |
-| Real-Time     | Socket.IO                  |
-| Database      | MongoDB                    |
-| Authentication| JWT (JSON Web Tokens)      |
+- **React.js** – Frontend framework
+- **JavaScript** – Logic and interactivity
+- **CSS** – Custom styling (or Tailwind CSS if used)
 
 ---
 
-## Installation
+## 🛠️ Getting Started
 
-### Prerequisites
+Follow these steps to run the project locally:
 
-- Node.js (v14 or higher)  
-- MongoDB (running locally or via Atlas)  
-
-### Steps
+### 1. Clone the repository
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/chat-app.git
-
-# Navigate to the backend folder
-cd chat-app/backend
-
-# Install backend dependencies
-npm install
-
-# Start backend server
-npm run server
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
