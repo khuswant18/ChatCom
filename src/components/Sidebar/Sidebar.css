@@ -51,9 +51,8 @@
   position: relative;
   gap: 12px;
   border-radius: 0.7rem;
-
+  animation: fadeIn 1s ease-in-out forwards;
 }
-
 
 
 .email-item.unread .sender {
