@@ -55,11 +55,13 @@ const emails = [
 
 function Sidebar() {
   return (
-
+    <div className="top-1">
     <div className="sidebar">
       <div className="header-left">
         <h1>Your inbox</h1>
       </div>
+
+      
 
 
       <div className="dropdown-header">
@@ -122,6 +124,12 @@ function Sidebar() {
         <button className="floating-btn">≡</button>
       </div>
     </div>
+
+      <button type="button" className="menu-button">
+        <img src="/images/Hamburger.svg" alt="menu-icon" className="menu-icon" />
+      </button>
+    </div>
+
   );
 }
 

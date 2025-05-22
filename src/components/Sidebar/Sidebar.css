@@ -1,15 +1,17 @@
 .header-left h1 {
-    display: block;
-    font-size: 1.5em;
-    font-weight: bold;
-    unicode-bidi: isolate;
-    margin-bottom: 2rem;
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  margin-bottom: 2rem;
 }
 
-
+.top-1 {
+  width: 23%;
+}
 
 .sidebar {
-  width: 340px;
+  width: 100%;
   padding: 20px;
   height: 100vh;
   overflow-y: auto; 
@@ -51,6 +53,8 @@
   border-radius: 0.7rem;
 
 }
+
+
 
 .email-item.unread .sender {
   font-weight: bold;
@@ -150,3 +154,65 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+
+.menu-button {
+    display: none;
+    border: none;
+    border-radius: 0.375rem;
+    background-color: var(--background-color);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+
+}
+
+
+.menu-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+
+}
+
+@media (max-width:1235px) {
+  .sidebar {
+    width: 100%;
+  }
+
+}
+
+@media (max-width:1103px) {
+
+  .sender {
+    font-size: 0.6rem;
+  }
+  .platform {
+    font-size: 0.6rem;
+  }
+  .prompt-text {
+    font-size: 0.5rem;
+  }
+
+  .report {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 1049px) {
+  .top-1 {
+    width: 4%;
+  }
+  .sidebar {
+    display: none;
+  }
+  .menu-button {
+    height: 80px;
+    display: block;
+  }
+}
+
+@media (max-width:678px) {
+  .top-1 {
+    display: none;
+  }
+  
+} 

@@ -32,3 +32,15 @@ body {
   left: 0;
   z-index: 1000;
 }
+
+@media (max-width:810px) {
+ .conversation-container {
+  width: 50%;
+ } 
+}
+
+@media (max-width:678px) {
+  .conversation-container {
+    display: none;
+  }
+}

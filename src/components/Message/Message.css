@@ -1,4 +1,5 @@
 .message {
+  margin-top: 1rem;
   display: flex;
   max-width: 70%;
   align-items: flex-start;
@@ -66,4 +67,27 @@
 
 .user-message .message-time {
   align-self: flex-start;
+}
+
+@media (max-width:1298px) {
+  .message {
+    margin-top: 1rem;
+  }
+  .message-text {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width:810px) {
+  .message {
+    padding:40px 0px;
+  }
+
+  .message-text {
+    font-size: 0.7rem;
+
+  }
+
+  
+  
 }

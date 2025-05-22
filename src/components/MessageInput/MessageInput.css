@@ -5,15 +5,15 @@
   padding: 1rem;
   border-top: 1px solid #e1e1e1;
   background-color: #ffffff;
-  width: 650px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 650px;
   height: 170px;
   box-sizing: border-box;
-  margin-bottom: 1.5rem;
+  margin: 0 auto 1.5rem auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
-  margin-right: 1.5rem;
-} 
+  transition: all 0.3s ease;
+}
 
 .input-container {
   display: flex;
@@ -49,9 +49,17 @@
   right: 1px;
 }
 
+.input-field {
+  display: flex;
+  width: 400px;
+
+  
+}
+
 
 .input-field input {
   width: 100%;
+  height: 100%;
   border: none;
   outline: none;
   font-size: 14px;
@@ -96,4 +104,110 @@
 .send-button:active {
   background-color: #2a5c8f; 
   box-shadow: 0 2px 6px rgba(42, 92, 143, 0.9);
+}
+
+.emoji-picker {
+  position: absolute;
+  bottom: 60px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  width: 220px;
+  z-index: 1000;
+}
+
+.emoji-picker .emoji {
+  font-size: 22px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.emoji-picker .emoji:hover {
+  background-color: #f0f0f0;
+}
+
+
+.file-select-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 0.2rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.file-select-button:hover {
+  color: #4a90e2;
+}
+
+
+@media (max-width:1082px) {
+  .message-input {
+    height: 150px;
+    margin-bottom: 0.6rem;
+  }
+}
+@media (max-width: 768px) {
+  .message-input {
+    max-width: 95%;
+    height: auto;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .input-field input {
+    font-size: 13px;
+    padding: 0.4rem;
+  }
+
+  .send-button {
+    font-size: 13px;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .input-icons svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .message-input {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    margin-bottom: 0.5rem;
+    box-shadow: none;
+  }
+
+  .chat-button {
+    font-size: 14px;
+  }
+
+  .dropdown_chat {
+    font-size: 0.95rem;
+  }
+
+  .send-button {
+    font-size: 12px;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .input-actions {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+  }
 }
