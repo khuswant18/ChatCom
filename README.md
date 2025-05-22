@@ -50,7 +50,7 @@ npm start
 ### 4. Open in your browser
 http://localhost:3000
 
-##Folder Structure
+## Folder Structure
 /src
   ├── components
   │   ├── Sidebar.jsx
